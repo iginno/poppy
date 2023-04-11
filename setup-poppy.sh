@@ -29,12 +29,12 @@ install_poppy_libraries()
 {
     pushd /tmp || exit
         echo -e "\e[33m install_poppy_libraries: hampy \e[0m"
-        wget --progress=dot:mega "https://github.com/poppy-project/hampy/archive/${hampy_branch}.zip" -O "hampy-${hampy_branch}.zip"
-        pip install hampy-${hampy_branch}.zip 
+        # wget --progress=dot:mega "https://github.com/poppy-project/hampy/archive/${hampy_branch}.zip" -O "hampy-${hampy_branch}.zip"
+        pip install hampy.zip 
         
         echo -e "\e[33m install_poppy_libraries: pypot \e[0m"
-        wget --progress=dot:mega "https://github.com/poppy-project/pypot/archive/${branch}.zip" -O "pypot-$branch.zip"
-        pip install "pypot-$branch.zip"
+        # wget --progress=dot:mega "https://github.com/poppy-project/pypot/archive/${branch}.zip" -O "pypot-$branch.zip"
+        pip install "pypot.zip"
     
         echo -e "\e[33m install_poppy_libraries: $creature \e[0m"
         wget --progress=dot:mega "https://github.com/poppy-project/$creature/archive/${branch}.zip" -O "$creature-$branch.zip"

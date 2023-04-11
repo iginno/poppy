@@ -122,6 +122,8 @@ echo -e "\e[33m *********************************** \e[0m"
 echo -e "\e[33m **** RasPoppyfication Complete **** \e[0m"
 echo -e "\e[33m *********************************** \e[0m"
 echo -e " "
+apt-get install libatlas-base-dev
+apt-get install libhdf5-serial-dev
 if [ $reboot_after_install -eq 1 ]; then
 	echo -e "\e[33m ** REBOOT ** \e[0m"
   reboot
