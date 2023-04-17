@@ -10,20 +10,20 @@ poppy = PoppyHumanoid(config="/opt/iginno/poppy_python/configuration/poppy_human
 # poppy.stand_position.stop()
 # for m in poppy.arms:
 #     m.compliant = True
-# # m_value = [0]*25
-# # b_print = False
-# # while(True):
-# #     for i in range(25):
-# #         if m_value[i] != poppy.motors[i].present_position:
-# #             m_value[i]=poppy.motors[i].present_position
-# #             b_print = True
-# #         else:
-# #             b_print = False
-# #     if b_print:
-# #         print (m_value)
-# #     else:
-# #         print("nothing changed")
-# #     time.sleep(0.1)
+m_value = [0]*25
+b_print = False
+while(True):
+    for i in range(25):
+        if m_value[i] != poppy.motors[i].present_position:
+            m_value[i]=poppy.motors[i].present_position
+            b_print = True
+        else:
+            b_print = False
+    if b_print:
+        print (m_value)
+    else:
+        print("nothing changed")
+    time.sleep(0.1)
 
 
 # # for m in poppy.motors:
