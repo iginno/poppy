@@ -3,7 +3,7 @@
 #This repository aims to remove the hotspot function and accelerate the script install time by installing correct version of related package.  
 
 1. Install rpi image using the latest one from website
-1.1 You may use filezilla or winssp to copy file to pi
+1.1 You may use filezilla or winscp to copy file to pi
 1.2 place the folder in home directory 
 1.3 zip the hampy folder and pypot folder into hampy.zip and pypot.zip
 2. run raspoppyfication.sh script  e.g. ./raspoppyfication.sh
@@ -31,3 +31,9 @@ Then change the value from 16 -> 1
 8. run python poppy_python/test.py
 
 You should see terminal output current each servo angle
+
+9. Comment out the start_x=1 in the /boot/config.txt e.g.
+
+sudo nano /boot/config.txt 
+
+#start_x=1
